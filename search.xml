@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[爱情这东西]]></title>
-    <url>%2Fpost%2F428099fc.html</url>
-    <content type="text"><![CDATA[123123123123123123123 123 123 12 312 3 123 132]]></content>
-      <categories>
-        <category>生活随想</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[测试]]></title>
-    <url>%2Fpost%2F9daba997.html</url>
-    <content type="text"><![CDATA[Windows 2019 Server安装优化 优秀的人，不是不合群，而是他们合群的人里面没有你 安装和激活安装好后用数字激活,使用命令查看激活日期和状况 1slmgr.vbs -dlv 系统优化 关闭Defend杀毒模式 运行 -&gt; gpedit.msc -&gt; 计算机管理-&gt;管理模板 -&gt; Windows 组件 -&gt; Windows Defender防病毒程序 -&gt; 启用“关闭Windows Defender防病毒程序”。 计算机配置 - Windows设置 - 安全设置 - 帐户策略 - 密码策略：”密码必须符合复杂性要求”，设置为”已禁用”。 计算机配置 - Windows设置 - 安全设置 - 帐户策略 - 密码策略：”密码最长使用期限”，设置为”0”（无期限）。 计算机配置 - Windows设置 - 安全设置 - 本地策略 - 密码策略 - 安全选项，”无需按 Ctrl+Alt+Del”，设置为”已启用”。 计算机配置 - Windows设置 - 安全设置 - 本地策略 - 密码策略 - 安全选项，”交互式登录：无需按 Ctrl+Alt+Del”，设置为”已启用”。 计算机配置 - 管理模板 - 系统，显示”关闭事件跟踪程序”，设置为”已禁用”。 解决问题：关机时，需要输入关机原因。设置后不再需要。 计算机配置 - 管理模板 - 系统，登录时不显示”管理你的服务器”页，设置为”已启用”。 解决问题：Administrators组下的用户每次登录，会自动启动server manager，设置该策略后，会不再自动启动。 计算机配置 - Windows设置 - 安全设置 - 本地策略 - 用户权限分配，“关闭系统设置为标准帐户类型的用户允许关机，重启 解决问题：标准帐户类型的用户，默认无法关机、重启，是没有这些按钮的，按如下设置可以解决该问题。添加Users组即可。 ​ 工作站默认的组（指windows 10）：Administrators, Backup Operators, Users. ​ 服务器默认的组（指windows server 2016）: Administrators, Backup Operators. 更新补丁，重启 系统服务安装]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello Word]]></title>
-    <url>%2Fpost%2Fc9a5ef14.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2Fpost%2F4a17b156.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
