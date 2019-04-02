@@ -3,11 +3,11 @@
   <title>黄庭小筑</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="/htyard/atom.xml" rel="self"/>
   
-  <link href="https://Ronny200.github.io/"/>
+  <link href="https://ronny200.coding.me/htyard/"/>
   <updated>2019-03-31T18:59:29.634Z</updated>
-  <id>https://Ronny200.github.io/</id>
+  <id>https://ronny200.coding.me/htyard/</id>
   
   <author>
     <name>吃虫子的橙</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://Ronny200.github.io/post/4a17b156.html"/>
-    <id>https://Ronny200.github.io/post/4a17b156.html</id>
+    <link href="https://ronny200.coding.me/htyard/post/4a17b156.html"/>
+    <id>https://ronny200.coding.me/htyard/post/4a17b156.html</id>
     <published>2019-03-31T10:15:24.214Z</published>
     <updated>2019-03-31T18:59:29.634Z</updated>
     
