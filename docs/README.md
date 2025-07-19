@@ -3,13 +3,13 @@ pageLayout: home
 externalLinkIcon: false
 config:
   -
-    type: hero
+    type: blog
     full: true
     background: tint-plate
     hero:
       name: Theme Plume
       tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      text: 一个颜值党的日常生活求学之路，40+的压力谁懂啊
       actions:
         -
           theme: brand

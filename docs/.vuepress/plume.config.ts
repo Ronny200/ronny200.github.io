@@ -18,12 +18,14 @@ import notes from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: 'https://cdn.jsdelivr.net/gh/htyard/blogimg/img/vue_blog_avatar.png',
 
   appearance: true,  // 配置 深色模式
 
   social: [
-    { icon: 'github', link: '/' },
+    { icon: 'github', link: 'https://github.com/ronny200' },
+    { icon: 'bilibili', link: 'https://space.bilibili.com/130921048' },
+    { icon: { svg: '<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>' }, link: 'mailto:yq.worm@gmail.com' },    
   ],
   // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
   // aside: true, // 页内侧边栏， 默认显示在右侧
@@ -49,11 +51,11 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
-    name: '胖叔在学习',
-    description: '一些学习心得和资料的整理',
-    // circle: true,
-    // location: '',
+    avatar: 'https://cdn.jsdelivr.net/gh/htyard/blogimg/img/vue_blog_avatar.png',
+    name: 'Ronny',
+    description: '南无Bug佛，保佑我编译一次过',
+    circle: true,
+    location: 'WenZhou, China',
     // organization: '',
   },
 
@@ -77,5 +79,6 @@ export default defineThemeConfig({
   //   postList: true,    // 启用 博客文章列表过渡动画
   //   appearance: 'fade',  // 启用 深色模式切换过渡动画, 或配置过渡动画类型
   // },
+
 
 })

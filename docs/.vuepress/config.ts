@@ -16,12 +16,12 @@ import { plumeTheme } from 'vuepress-theme-plume'
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
-  title: '胖叔在学习',
-  description: '一些学习心得和资料的整理',
+  title: 'Ronny Blog',
+  description: '南无Bug佛，保佑我编译一次过',
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://theme-plume.vuejs.press/favicon-32x32.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://cdn.jsdelivr.net/gh/htyard/blogimg/img/text_R.png' }],
   ],
 
   bundler: viteBundler(),
@@ -29,7 +29,7 @@ export default defineUserConfig({
 
   theme: plumeTheme({
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
-    // hostname: 'https://your_site_url',
+    hostname: 'https://ronny200.github.io/',
 
     /* 文档仓库配置，用于 editLink */
     // docsRepo: '',
@@ -109,12 +109,12 @@ export default defineUserConfig({
       */
     // markdown: {
     //   abbr: true,         // 启用 abbr 语法  *[label]: content
-    //   annotation: true,   // 启用 annotation 语法  [+label]: content
+         annotation: true,   // 启用 annotation 语法  [+label]: content
     //   pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
     //   caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
     //   plot: true,         // 启用隐秘文本语法 !!xxxx!!
-    //   bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
-    //   youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
+         bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
+         youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
     //   artPlayer: true,    // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
     //   audioReader: true,  // 启用嵌入音频朗读功能 语法 @[audioReader](url)
     //   icon: { provider: 'iconify' },        // 启用内置图标语法  ::icon-name::
@@ -157,17 +157,17 @@ export default defineUserConfig({
      * 评论 comments
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
-    // comment: {
-    //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-    //   comment: true,
-    //   repo: '',
-    //   repoId: '',
-    //   category: '',
-    //   categoryId: '',
-    //   mapping: 'pathname',
-    //   reactionsEnabled: true,
-    //   inputPosition: 'top',
-    // },
+     comment: {
+       provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+       comment: true,
+       repo: 'Ronny200/vue_giscus',
+       repoId: 'R_kgDOPPI5gg',
+       category: 'Announcements',
+       categoryId: 'DIC_kwDOPPI5gs4CtK2w',
+       mapping: 'pathname',
+       reactionsEnabled: true,
+       inputPosition: 'top',
+     },
 
     /**
      * 资源链接替换
