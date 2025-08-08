@@ -12,6 +12,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import notes from './notes/index.ts'
 
 export default defineUserConfig({
   base: '/',
@@ -21,13 +22,14 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { rel: 'icon', type: 'image/png', href: 'https://cdn.jsdelivr.net/gh/htyard/blogimg/img/text_R.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: 'https://cdn.jsdelivr.net/gh/htyard/blogimg/img/favicon.ico' }],
   ],
 
   bundler: viteBundler(),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
 
   theme: plumeTheme({
+    notes,
     /* 添加您的部署域名, 有助于 SEO, 生成 sitemap */
     hostname: 'https://ronny200.github.io/',
 
@@ -69,11 +71,11 @@ export default defineUserConfig({
      * 为 markdown 文件自动添加 frontmatter 配置
      * @see https://theme-plume.vuejs.press/config/basic/#autofrontmatter
      */
-    // autoFrontmatter: {
-    //   permalink: true,  // 是否生成永久链接
-    //   createTime: true, // 是否生成创建时间
-    //   title: true,      // 是否生成标题
-    // },
+    autoFrontmatter: {
+      permalink: true,  // 是否生成永久链接
+      createTime: true, // 是否生成创建时间
+      title: true,      // 是否生成标题
+    },
 
     /* 本地搜索, 默认启用 */
     search: { provider: 'local' },
@@ -109,12 +111,12 @@ export default defineUserConfig({
       */
     // markdown: {
     //   abbr: true,         // 启用 abbr 语法  *[label]: content
-         annotation: true,   // 启用 annotation 语法  [+label]: content
+    annotation: true,   // 启用 annotation 语法  [+label]: content
     //   pdf: true,          // 启用 PDF 嵌入 @[pdf](/xxx.pdf)
     //   caniuse: true,      // 启用 caniuse 语法  @[caniuse](feature_name)
     //   plot: true,         // 启用隐秘文本语法 !!xxxx!!
-         bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
-         youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
+    bilibili: true,     // 启用嵌入 bilibili视频 语法 @[bilibili](bid)
+    youtube: true,      // 启用嵌入 youtube视频 语法 @[youtube](video_id)
     //   artPlayer: true,    // 启用嵌入 artPlayer 本地视频 语法 @[artPlayer](url)
     //   audioReader: true,  // 启用嵌入音频朗读功能 语法 @[audioReader](url)
     //   icon: { provider: 'iconify' },        // 启用内置图标语法  ::icon-name::
@@ -157,17 +159,17 @@ export default defineUserConfig({
      * 评论 comments
      * @see https://theme-plume.vuejs.press/guide/features/comments/
      */
-     comment: {
-       provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-       comment: true,
-       repo: 'Ronny200/vue_giscus',
-       repoId: 'R_kgDOPPI5gg',
-       category: 'Announcements',
-       categoryId: 'DIC_kwDOPPI5gs4CtK2w',
-       mapping: 'pathname',
-       reactionsEnabled: true,
-       inputPosition: 'top',
-     },
+    comment: {
+      provider: 'Giscus', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
+      comment: true,
+      repo: 'Ronny200/vue_giscus',
+      repoId: 'R_kgDOPPI5gg',
+      category: 'Announcements',
+      categoryId: 'DIC_kwDOPPI5gs4CtK2w',
+      mapping: 'pathname',
+      reactionsEnabled: true,
+      inputPosition: 'top',
+    },
 
     /**
      * 资源链接替换

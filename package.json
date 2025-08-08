@@ -2,7 +2,7 @@
   "name": "胖叔在学习",
   "type": "module",
   "version": "1.0.0",
-  "description": "一些学习心得和资料的整理",
+  "description": "一些学习心得和资料的整理以及一些絮絮叨叨的中年人的啰唆之语",
   "packageManager": "pnpm@10.13.1",
   "pnpm": {
     "onlyBuiltDependencies": [
