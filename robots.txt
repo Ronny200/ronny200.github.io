@@ -1,0 +1,3 @@
+Sitemap: https://ronny200.github.io/sitemap.xml
+User-agent:*
+Disallow:
